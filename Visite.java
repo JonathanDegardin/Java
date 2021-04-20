@@ -1,44 +1,54 @@
-/** Classe Visite de test pour le début de l'apprentissage en Java */
+/**  Classe Visite de test pour le début de l'apprentissage en Java 
+ * @author Degardin Jonathan 
+ * @version 1.0 */
 public class Visite {
 	int noteV;
 	String nomV;
 	String dateV;
 	/** Constructeur vide de Visite */
 	Visite(){};
-	/** Constructeur de Visite prenant 3 param en entrée */
+	/**Constructeur de Visite prenant 3 param en entrée
+	 *  @param int note,String nom,String date */
 	public Visite(int note,String nom,String date){
 		this.noteV = note; 
 		this.nomV = nom;
 		this.dateV = date;
 	}
-	/** Méthode ConvertDateUS qui passe la date du format jj-mm-aaaa au format mm-jj-aaaa */ 
+	/** Méthode ConvertDateUS qui passe la date du format jj-mm-aaaa au format mm-jj-aaaa
+	 * @param String date */ 
 	public String convertDateUS(String date) {
 		
 		String[] dateSplit = date.split("/");
 		String dateUS = dateSplit[1] + "-" + dateSplit[0] + "-" + dateSplit[2];
 		return dateUS;
 	}
-	/** Méthode Get du nom */
+	/** Méthode Get du nom
+	 * @param String nom */
 	String getNomV(String nom){
 		return this.nomV;
 	}
-	/** Méthode Get de la date */
+	/** Méthode Get de la date
+	 * @param String date  */
 	String getDateV(String date){
 		return this.dateV;
 	}
-	/** Méthode Get de la note*/
+	/** Méthode Get de la note 
+	 * @param int note*/
 	int getNoteV(int note){
 		return this.noteV;
 	}
-	/** Méthode Set du nom */
+	/**  Méthode Set du nom
+	 * @param String nom  */
 	void setNomV(String nom) {
 		this.nomV = nom;
 	}
-	/** Méthode Set de la note */
+	/**Méthode Set de la note
+	 * @param int note  */
 	void setNoteV(int note) {
 		this.noteV=note;
 	}
-	/** Méthode Set de la date */
+	/**Méthode Set de la date
+	 * @param String date */
 	void setDateV(String date) {
 		this.dateV=date;
 	}
