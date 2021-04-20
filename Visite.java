@@ -9,23 +9,23 @@ public class Visite {
 		this.nomV = nom;
 		this.dateV = date;
 	}
-	String GetNomV(String nom){
+	String getNomV(String nom){
 		return this.nomV;
 	}
 	
-	String GetDateV(String date){
+	String getDateV(String date){
 		return this.dateV;
 	}
-	int GetNoteV(int note){
+	int getNoteV(int note){
 		return this.noteV;
 	}
-	void SetNomV(String nom) {
+	void setNomV(String nom) {
 		this.nomV = nom;
 	}
-	void SetNoteV(int note) {
+	void setNoteV(int note) {
 		this.noteV=note;
 	}
-	void SetDateV(String date) {
+	void setDateV(String date) {
 		this.dateV=date;
 	}
 	public String ToString() {
