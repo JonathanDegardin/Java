@@ -1,6 +1,7 @@
 /**  Classe Visite de test pour le début de l'apprentissage en Java 
  * @author Degardin Jonathan 
  * @version 1.0 */
+import tools.MesDates;
 public class Visite {
 	int noteV;
 	String nomV;
@@ -63,5 +64,15 @@ public class Visite {
 		System.out.println(V2.nomV);
 		System.out.println(V1.ToString());
 		System.out.println(V1.convertDateUS(V1.dateV));
+		String dateFR = "20/04/2021";
+		String dateUS = "04-20-2021";
+		//---------------------------------------------------------
+		System.out.println(dateFR);
+		MesDates.dateFRtoUS(dateFR);
+		System.out.println(MesDates.dateFRtoUS(dateFR));
+		System.out.println(dateUS);
+		MesDates.dateUStoFR(dateUS);
+		System.out.println(MesDates.dateUStoFR(dateUS));
+
 	}
 }
