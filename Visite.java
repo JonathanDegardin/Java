@@ -9,6 +9,12 @@ public class Visite {
 		this.nomV = nom;
 		this.dateV = date;
 	}
+	public String convertDateUS(String date) {
+		
+		String[] dateSplit = date.split("/");
+		String dateUS = dateSplit[1] + "-" + dateSplit[0] + "-" + dateSplit[2];
+		return dateUS;
+	}
 	String getNomV(String nom){
 		return this.nomV;
 	}
@@ -37,5 +43,6 @@ public class Visite {
 		System.out.println(V1.nomV);
 		System.out.println(V2.nomV);
 		System.out.println(V1.ToString());
+		System.out.println(V1.convertDateUS(V1.dateV));
 	}
 }
